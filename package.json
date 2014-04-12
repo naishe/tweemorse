@@ -1,0 +1,19 @@
+{
+  "name": "moweet",
+  "version": "0.0.1",
+  "description": "Displays Tweets in Morse Code",
+  "main": "index.js",
+  "dependencies": {
+		"twitter"		: "0.2.9",
+		"pi-gpio"		: "0.0.5",
+		"npa"				:	"0.1.1",
+		"telnet"		: "*",
+		"optimist"	: "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nishant",
+  "license": "BSD"
+}
