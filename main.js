@@ -7,8 +7,7 @@ var util 			= require('util'),
 		npa 			= require('npa')(),
 		telnet		= require('telnet'),
 		argv 			= require('optimist').argv,
-		queue			= require('queue-async');
-		q					= require('q'),
+		queue			= require('queue-async'),
 		conf			= require('./config.js').conf;
 
 
