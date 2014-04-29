@@ -95,6 +95,12 @@ If you did not want to use Twitter, and just wanted to send message to your Pi t
 3. To increase of decrease the duration of blink, you will need to edit `config.js` and change `conf.delayInMillis`
 4. To increase the verbosity of the application console output set `conf.verbose = true;` in `config.js`.
 
+
+####Circuit
+Just in case.
+
+<img src="https://raw.githubusercontent.com/naishe/tweemorse/master/circuit.png" alt="Circuit Diagram" style="width: 500px;"/>
+
 Have fun!  
 naishe
 
