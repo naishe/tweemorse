@@ -3,6 +3,8 @@ Tweemorse
 
 This is a fun projector with [RaspberryPi](http://www.raspberrypi.org/) and Node.js. This project basically takes your Twitter credentials and, users and keywords that you wanted to follow. Then it streams data from Twitter, extracts the message from it, converts it to [MorseCode](en.wikipedia.org/wiki/Morse_code), and turns the LED or beeper attached to the specified pin (default: 11) in ON or OFF based on generated Morse code.
 
+![SOS via Telnet][1]
+
 ####Configuration
 If you want to drive the output (LED, beeper) from Twitter. You will have to configure your credentials from Twitter. To do that, you may need to create a Twitter app on https://apps.twitter.com/. Once you have create the app, you can use the credentials to fill the following fields in the `config.js` file.
 
@@ -97,3 +99,6 @@ Have fun!
 naishe
 
 > Written with [StackEdit](https://stackedit.io/).
+
+
+  [1]: http://i.imgur.com/okSMSs1.gif "SOS"
