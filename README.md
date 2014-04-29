@@ -1,19 +1,19 @@
 Tweemorse
 =========
 
-This is a fun projector with [RaspberryPi](http://www.raspberrypi.org/) and Node.js. This project basically takes your Twitter credentials and, users and keywords that you wanted to follow. Then it streams data from Twitter, extracts the message from it, converts it to [MorseCode](en.wikipedia.org/wiki/Morse_code), and turns the LED or beeper attached to the specified pin (default: 11) in ON or OFF based on generated Morse code.
+This is a fun projector with [RaspberryPi](http://www.raspberrypi.org/) and Node.js. This project basically takes your Twitter credentials and, users and keywords that you wanted to follow. Then it streams data from Twitter, extracts the message from it, converts it to [Morse code](en.wikipedia.org/wiki/Morse_code), and turns the LED or beeper attached to the specified pin (default: 11) ON or OFF based on generated Morse code.
 
 ![SOS via Telnet][1]
 
 ####Configuration
-If you want to drive the output (LED, beeper) from Twitter. You will have to configure your credentials from Twitter. To do that, you may need to create a Twitter app on https://apps.twitter.com/. Once you have create the app, you can use the credentials to fill the following fields in the `config.js` file.
+If you want to drive the output (LED, beeper) from Twitter. You will have to configure your credentials from Twitter. To do that, you may need to create a Twitter app on https://apps.twitter.com/. Once you have created the app, you can use the credentials to fill the following fields in the `config.js` file.
 
     conf.twitter.consumerKey = "YOUR_CONSUMER_KEY";
     conf.twitter.consumerSecret = "YOUR_CONSUMER_SECRET";
     conf.twitter.accessTokenKey = "YOUR_ACCESS_TOKEN_KEY";
     conf.twitter.accessTokenSecret = "YOUR_ACCESS_TOKEN_SECRET";
 
-Replace those all-caps placeholder with real values. You can now go ahead and edit the following fields to follow the desired users or keywords:
+Replace those all-caps placeholders with real values. You can now go ahead and edit the following fields to follow the desired users or keywords:
 
     conf.users = ["naishe", "substack"];
     conf.keywords = ["raspberrypi", "#wtf"];
@@ -65,7 +65,7 @@ To install the application, you will need to download it from github and then in
     sudo node main.js --nopi --telnet
 
 ####Having fun with Telnet
-If you did not want to use Twitter, and just want to send message to your Pi to display it in Morse code. Start the application in Telnet mode by using option `--telnet`. Then you can connect to the telnet server running on RaspberryPi, and send it messages that will be displayed as Morse Code. Here is what you need to do:
+If you did not want to use Twitter, and just wanted to send message to your Pi to display it in Morse code. Start the application in Telnet mode by using option `--telnet`. Then you can connect to the telnet server running on RaspberryPi, and send it messages that will be displayed as Morse code. Here is what you need to do:
 
 **On RaspberryPi:**
 
@@ -95,7 +95,7 @@ If you did not want to use Twitter, and just want to send message to your Pi to 
 3. To increase of decrease the duration of blink, you will need to edit `config.js` and change `conf.delayInMillis`
 4. To increase the verbosity of the application console output set `conf.verbose = true;` in `config.js`.
 
-Have fun!
+Have fun!  
 naishe
 
 > Written with [StackEdit](https://stackedit.io/).
